@@ -1,0 +1,18 @@
+name: 'Github Repository Update'
+description: 'Set Github repository to private'
+inputs:
+  token:
+    description: 'Github token'
+    required: true
+  owner:
+    description: 'Repository owner'
+    required: true
+  repo:
+    description: 'Repository name'
+    required: true
+outputs:
+  repoName:
+    description: 'Repository name'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
